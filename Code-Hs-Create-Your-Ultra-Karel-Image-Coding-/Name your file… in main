@@ -1,0 +1,499 @@
+/* UltraKarel will be making a flower today, these are the functions 
+that I will be using throughout the program to make each 
+single thing*/
+function start() {
+     makeGrass();
+     makeStem();
+     makeFlower();
+     makeSecondLayer();
+     makeThirdLayer();
+     makeSky();
+}
+/*This function will make UltraKarel make the grass hornzontally 
+until the 4th row.*/
+function makeGrass() {
+    while(frontIsClear()){
+        paint(Color.green);
+        move();
+    }
+    paint(Color.green);
+    turnLeft();
+    move();
+    turnLeft();
+    while(frontIsClear()){
+        paint(Color.green);
+        move();
+    }
+    paint(Color.green);
+    turnRight();
+    move();
+    paint(Color.green);
+    turnRight();
+    while(frontIsClear()){
+        paint(Color.green);
+        move();
+    }
+    paint(Color.green);
+    turnLeft();
+    move();
+    turnLeft();
+    while(frontIsClear()){
+        paint(Color.green);
+        move();
+    }
+    paint(Color.green);
+    turnRight();
+    turnRight();
+    for (var i=0;i<10;i++){
+        move();
+    }
+}
+//This will make UltraKarel make the stem of the flower vertically
+function makeStem(){
+    turnLeft();
+    for(var i=0;i<8;i++){
+        paint(Color.green);
+        move();
+    }
+    turnRight();
+    turnRight();
+    for(var i=0;i<5;i++){
+        move();
+    }
+    turnRight();
+    move();
+    turnLeft();
+    turnLeft();
+    turnLeft();
+    move();
+    paint(Color.green);
+    move();
+    turnLeft();
+    move();
+    paint(Color.green);
+    turnLeft();
+    turnLeft();
+    move();
+    move();
+    move();
+    move();
+    paint(Color.green);
+    turnRight();
+    move();
+    turnRight();
+    move();
+    paint(Color.green);
+    move();
+    turnRight();
+    move();
+    move();
+    move();
+}
+/*This function will make UltraKarel start making the flower. It 
+will make the inside, which is the black color then the first 
+color layer of the flower which is red*/
+function makeFlower(){
+    move();
+    paint(Color.black);
+    move();
+    paint(Color.black);
+    turnRight();
+    move();
+    paint(Color.black);
+    turnRight();
+    paint(Color.black);
+    move();
+    paint(Color.black);
+    turnRight();
+    move();
+    move();
+    paint(Color.black);
+    turnRight();
+    move();
+    paint(Color.black);
+    move();
+    paint(Color.red);
+    turnRight();
+    move();
+    paint(Color.red);
+    move();
+    paint(Color.red);
+    move();
+    paint(Color.red);
+    turnRight();
+    move();
+    paint(Color.red);
+    move();
+    paint(Color.red);
+    turnRight();
+    turnRight();
+    move();
+    move();
+    turnLeft();
+    move();
+    move();
+    move();
+    move();
+    paint(Color.red);
+    turnLeft();
+    move();
+    paint(Color.red);
+    move();
+    paint(Color.red);
+    
+}
+/*This function will make UltraKarel make the second color layer 
+of the flower which is orange*/
+function makeSecondLayer(){
+    turnRight();
+    move();
+    paint(Color.orange);
+    turnRight();
+    move();
+    paint(Color.orange);
+    move();
+    paint(Color.orange);
+    move();
+    paint(Color.orange);
+    turnRight();
+    for(var i=0;i<6;i++){
+        move();
+        paint(Color.orange);
+    }
+    turnRight();
+    move();
+    paint(Color.orange);
+    move();
+    paint(Color.orange);
+    move();
+    paint(Color.orange);
+    turnLeft();
+}
+/*This function will make UltraKarel make the third layer of the 
+flowers color which is yellow*/
+function makeThirdLayer(){
+    move();
+    turnLeft();
+    paint(Color.yellow);
+    for(var i=0;i<4;i++){
+        move();
+        paint(Color.yellow);
+    }
+    turnLeft();
+    for(var i=0;i<8;i++){
+        move();
+        paint(Color.yellow);
+    }
+    turnLeft();
+    for(var i=0;i<4;i++){
+        move();
+        paint(Color.yellow);
+    }
+}
+/*This function will make UltraKarel make the sky all around the box
+and UltraKarel will end up on the right side,facing west looking at 
+the flower from the 5th and the 20th column. */
+function makeSky(){
+    for(var i=0;i<7;i++){
+        move();
+        paint(Color.blue);
+    }
+    turnLeft();
+    move();
+    paint(Color.blue);
+    move();
+    paint(Color.blue);
+    move();
+    paint(Color.blue);
+    move();
+    for(var i=0;i<9;i++){
+        move();
+        paint(Color.blue);
+    }
+    turnLeft();
+    turnLeft();
+    for(var i=0;i<14;i++){
+        move();
+    }
+    paint(Color.blue);
+    for(var i=0;i<5;i++){
+        move();
+        paint(Color.blue);
+    }
+    turnRight();
+    for(var i=0;i<15;i++){
+        move();
+        paint(Color.blue);
+    }
+    turnRight();
+    move();
+    paint(Color.blue);
+    turnRight();
+    for(var i=0;i<14;i++){
+        move();
+        paint(Color.blue);
+    }
+    turnLeft();
+    move();
+    turnLeft();
+    paint(Color.blue);
+    for(var i=0;i<14;i++){
+        move();
+        paint(Color.blue);
+    }
+    turnRight();
+    move();
+    paint(Color.blue);
+    turnRight();
+    for(var i=0;i<14;i++){
+        move();
+        paint(Color.blue);
+    }
+    turnLeft();
+    move();
+    paint(Color.blue);
+    turnLeft();
+    for(var i=0;i<14;i++){
+        move();
+        paint(Color.blue);
+    }
+    turnRight();
+    move();
+    paint(Color.blue);
+    turnRight();
+    for(var i=0;i<14;i++){
+        move();
+        paint(Color.blue);
+    }
+    turnLeft();
+    move();
+    turnLeft();
+    for(var i=0;i<11;i++){
+        move();
+    }
+    paint(Color.blue);
+    move();
+    paint(Color.blue);
+    move();
+    paint(Color.blue);
+    move();
+    paint(Color.blue);
+    turnRight();
+    move();
+    turnRight();
+    paint(Color.blue);
+    paint(Color.blue);
+    move();
+    paint(Color.blue);
+    move();
+    paint(Color.blue);
+    move();
+    paint(Color.blue);
+    for(var i=0;i<6;i++){
+        move();
+    }
+    paint(Color.blue);
+    for(var i=0;i<5;i++){
+        move();
+        paint(Color.blue);
+    }
+    turnLeft();
+    move();
+    paint(Color.blue);
+    turnLeft();
+    move();
+    paint(Color.blue);
+    move();
+    paint(Color.blue);
+    move();
+    move();
+    paint(Color.blue);
+    move();
+    paint(Color.blue);
+    for(var i=0;i<6;i++){
+        move();
+    }
+    paint(Color.blue);
+    move();
+    paint(Color.blue);
+    move();
+    paint(Color.blue);
+    move();
+    paint(Color.blue);
+    turnRight();
+    move();
+    paint(Color.blue);
+    turnRight();
+    move();
+    paint(Color.blue);
+    move();
+    paint(Color.blue);
+    move();
+    paint(Color.blue);
+    for(var i=0;i<6;i++){
+        move();
+    }
+    paint(Color.blue);
+    move();
+    paint(Color.blue);
+    move();
+    paint(Color.blue);
+    move();
+    move();
+    paint(Color.blue);
+    move();
+    paint(Color.blue);
+    turnLeft();
+    move();
+    turnLeft();
+    for(var i=0;i<11;i++){
+        move();
+    }
+    paint(Color.blue);
+    move();
+    paint(Color.blue);
+    move();
+    paint(Color.blue);
+    move();
+    paint(Color.blue);
+    turnRight();
+    move();
+    paint(Color.blue);
+    turnRight();
+    move();
+    paint(Color.blue);
+    move();
+    paint(Color.blue);
+    move();
+    paint(Color.blue);
+    for(var i=0;i<6;i++){
+        move();
+    }
+    paint(Color.blue);
+    move();
+    paint(Color.blue);
+    move();
+    paint(Color.blue);
+    move();
+    move();
+    paint(Color.blue);
+    move();
+    paint(Color.blue);
+    turnLeft();
+    move();
+    paint(Color.blue);
+    turnLeft();
+    move();
+    paint(Color.blue);
+    move();
+    paint(Color.blue);
+    move();
+    move();
+    paint(Color.blue);
+    move();
+    paint(Color.blue);
+    for(var i=0;i<6;i++){
+        move();
+    }
+    paint(Color.blue);
+    move();
+    paint(Color.blue);
+    move();
+    paint(Color.blue);
+    move();
+    paint(Color.blue);
+    turnRight();
+    move();
+    paint(Color.blue);
+    turnRight();
+    move();
+    paint(Color.blue);
+    move();
+    paint(Color.blue);
+    move();
+    paint(Color.blue);
+    for(var i=0;i<6;i++){
+        move();
+    }
+    paint(Color.blue);
+    for(var i=0;i<5;i++){
+        move();
+        paint(Color.blue);
+    }
+    turnLeft();
+    move();
+    turnLeft();
+    paint(Color.blue);
+    move();
+        paint(Color.blue);
+        for(var i=0;i<4;i++){
+        move();
+        paint(Color.blue);
+    }
+    for(var i=0;i<6;i++){
+        move();
+    }
+    paint(Color.blue);
+    move();
+        paint(Color.blue);
+        move();
+        paint(Color.blue);
+        move();
+        paint(Color.blue);
+        turnRight();
+        move();
+        paint(Color.blue);
+        turnRight();
+        for(var i=0;i<14;i++){
+        move();
+        paint(Color.blue);
+    }
+        turnLeft();
+        move();
+        paint(Color.blue);
+        turnLeft();
+        for(var i=0;i<14;i++){
+        move();
+        paint(Color.blue);
+    }
+    turnRight();
+    move();
+    paint(Color.blue);
+    turnRight();
+    for(var i=0;i<14;i++){
+        move();
+        paint(Color.blue);
+    }
+    turnLeft();
+    move();
+    turnLeft();
+    paint(Color.blue);
+    for(var i=0;i<14;i++){
+        move();
+        paint(Color.blue);
+    }
+    turnRight();
+    move();
+    turnRight();
+    paint(Color.blue);
+    for(var i=0;i<14;i++){
+        move();
+        paint(Color.blue);
+    }
+    move();
+    turnLeft();
+    turnLeft();
+    turnLeft();
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+}
